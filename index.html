@@ -6,13 +6,75 @@
       window.onload = function(){
         // ALL OF YOUR JAVASCRIPT CODE SHOULD GO HERE. 
         // We have to use window.onload so your JavaScript doesn't execute until the page has loaded and all HTML has been downloaded to your browser
-        
+	    var container = document.getElementById('main');
+
+	    var inbox = document.createElement('div');
+	    inbox.className = ("inbox");
+	    inbox.innerHTML = "You have " + window.geemails.length + " geemails.";
+	    container.appendChild(inbox);
+
+        for (var i = 0; i < window.geemails.length; i++) {
+        	console.log(window.geemails[i]);
+
+	       	var container = document.getElementById('main');
+
+	        var geemailContent = document.createElement('div');
+	        geemailContent.className = ("geemailContent");
+	        container.appendChild(geemailContent);     
+
+	        var row = document.createElement('div');
+	        row.className = ("row");
+	        geemailContent.appendChild(row);
+
+	        var sender = document.createElement('div');
+	        sender.className = ("sender");
+	        sender.innerHTML = "<strong>From: </strong>" + window.geemails[i].sender;
+	        row.appendChild(sender);
+
+	        var date = document.createElement('div');
+	        date.className = ("date");
+	        date.innerHTML = "<strong>Date: </strong>" + window.geemails[i].date;
+	        row.appendChild(date);     
+
+	        var subject = document.createElement('div');
+	        subject.className = ("subject");
+	        subject.innerHTML = window.geemails[i].subject;
+	        row.appendChild(subject);   
+
+	        var messageRow = document.createElement('div');
+	        messageRow.className = ("messageRow"); 			// display hidden in CSS
+	        geemailContent.appendChild(messageRow);
+
+	        var messageBody = document.createElement('div');
+	        messageBody.className = ("messageBody");
+	        messageBody.innerHTML = window.geemails[i].body;
+	        messageRow.appendChild(messageBody);
+      		
+      		var container = function(){ 
+      			$('.row').click(function(){ 				// Why doesn't this click function work?
+      				('.messageRow').show();
+	        	});
+      		};
+
+	        };
+
+	    console.log('out');
+
       };
+
+
+
     </script>
+    	<title>gee-mail</title>
 	</head>
 	<body>
+		<div class="header" role="banner">
+			<div class="header_text">
+				<h1>geemail </h1>
+				<p>by <a href="https://github.com/julzbond">julzbond</a></p>
+			</div>
+			</div>
 		<div class="container" id="main">
-			Build Me!
 		</div>
 	</body>
 </html>

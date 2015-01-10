@@ -1,0 +1,75 @@
+body {
+	font-size: 16px;
+	font-family: 'Open Sans', 'Helvetica Neue', 'Arial', sans-serif;
+	font-weight: 200;
+}
+
+.header {
+	padding: 30px 0px 30px 0px;
+	background: #0266c8;
+	text-align: center;
+}
+
+.header_text {
+	color: #fff;
+	font-weight:300;
+}
+
+.header_text h1 {
+	font-size: 30px;
+	font-weight: 500;
+	color: #fff;
+	text-transform: uppercase;
+}
+
+.header_text a{
+	color: #bbb;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+.header_text a:hover{
+	text-decoration: underline;
+}
+
+#main {
+	padding: 20px 20px;
+}
+
+.inbox {
+	text-align: right;
+	padding: 10px 0px;
+	font-size: 12px;
+}
+
+.row {
+	padding: 15px 0px 10px 0px;
+	font-size: 85%;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #bbb;
+    font-size: 10px;
+    font-family: "Lucida Grande", Verdana, Helvetica, Arial, sans-serif;
+    font-weight: 100;	
+	border-bottom: 1px solid #ccc;
+}
+
+.sender {
+	text-transform: none;
+	font-size: 16px;
+}
+
+.subject {
+	color: #02c8c7;
+	font-size: 100%;
+	text-transform: none;
+	font-size: 20px;
+	font-weight: 500;
+	padding: 10px 0px;
+}
+
+
+.messageRow {
+	padding: 0px 0px 30px 0px;
+	display: none;
+}
