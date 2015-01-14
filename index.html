@@ -11,7 +11,7 @@
 	    var inbox = document.createElement('div');
 	    inbox.className = ("inbox");
 	    inbox.innerHTML = "You have " + window.geemails.length + " geemails.";
-	    container.appendChild(inbox);
+	    container.appendChild(inbox); // may need to change this to account for recurring geemails
 
         for (var i = 0; i < window.geemails.length; i++) {
         	console.log(window.geemails[i]);
@@ -24,7 +24,8 @@
 
 	        var row = document.createElement('div');
 	        row.className = ("row");
-	        geemailContent.appendChild(row);
+ 	        geemailContent.appendChild(row);
+ 	        row.onlick =
 
 	        var sender = document.createElement('div');
 	        sender.className = ("sender");
@@ -42,17 +43,17 @@
 	        row.appendChild(subject);   
 
 	        var messageRow = document.createElement('div');
-	        messageRow.className = ("messageRow"); 			// display hidden in CSS
+	        messageRow.className = ("messageRow"); 			// display: hidden;
 	        geemailContent.appendChild(messageRow);
 
-	        var messageBody = document.createElement('div');
+	        var messageBody = document.createElement('xdiv');
 	        messageBody.className = ("messageBody");
 	        messageBody.innerHTML = window.geemails[i].body;
 	        messageRow.appendChild(messageBody);
-      		
-      		var container = function(){ 
-      			$('.row').click(function(){ 				// Why doesn't this click function work?
-      				('.messageRow').show();
+
+      		var main = function (){ 
+      			$('.row').click(function(){ 				
+      				('.messageRow').show(i);
 	        	});
       		};
 
@@ -61,8 +62,6 @@
 	    console.log('out');
 
       };
-
-
 
     </script>
     	<title>gee-mail</title>
