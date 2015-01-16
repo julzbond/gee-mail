@@ -14,7 +14,6 @@
 	    container.appendChild(inbox); // may need to change this to account for recurring geemails
 
         for (var i = 0; i < window.geemails.length; i++) {
-        	console.log(window.geemails[i]);
 
 	       	var container = document.getElementById('main');
 
@@ -43,24 +42,21 @@
 
 	        var messageRow = document.createElement('div');
 	        messageRow.className = ("messageRow"); 			// display: hidden;
+	        messageRow.innerHTML = window.geemails[i].body;
 	        geemailContent.appendChild(messageRow);
+	        
+	       	var container = function() {
+ 				$('.row').click(function() {
+    			$('.messageRow').hide();
 
-	        var messageBody = document.createElement('xdiv');
-	        messageBody.className = ("messageBody");
-	        messageBody.innerHTML = window.geemails[i].body;
-	        messageRow.appendChild(messageBody);
-
-      		var main = function (){ 
-      			$('.row').click(function(){ 				
-      				('.messageRow').show(i);
-	        	});
+    			$(this).children('.messageRow').show();
+    		});
+    		}
       		};
-
-	        };
 
 	    console.log('out');
 
-      };
+	    };
 
     </script>
     	<title>gee-mail</title>
@@ -68,8 +64,7 @@
 	<body>
 		<div class="header" role="banner">
 			<div class="header_text">
-				<h1>geemail </h1>
-				<p>by <a href="https://github.com/julzbond">julzbond</a></p>
+				<h1>inbox</h1>
 			</div>
 			</div>
 		<div class="container" id="main">

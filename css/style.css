@@ -10,26 +10,11 @@ body {
 	text-align: center;
 }
 
-.header_text {
-	color: #fff;
-	font-weight:300;
-}
-
 .header_text h1 {
 	font-size: 30px;
 	font-weight: 500;
 	color: #fff;
 	text-transform: uppercase;
-}
-
-.header_text a{
-	color: #bbb;
-	text-decoration: none;
-	text-transform: uppercase;
-}
-
-.header_text a:hover{
-	text-decoration: underline;
 }
 
 #main {
