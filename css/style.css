@@ -1,13 +1,16 @@
 body {
 	font-size: 16px;
 	font-family: 'Open Sans', 'Helvetica Neue', 'Arial', sans-serif;
+	cursor: default;
 	font-weight: 200;
+	color: #000;
 }
 
 .header {
-	padding: 30px 0px 30px 0px;
-	background: #0266c8;
+	padding: 25px 0px;
+	background: #008cdd;
 	text-align: center;
+	margin: 0px 0px 0px 0px;
 }
 
 .header_text h1 {
@@ -18,43 +21,41 @@ body {
 }
 
 #main {
-	padding: 20px 20px;
+	padding: 20px;
 }
 
 .inbox {
 	text-align: right;
 	padding: 10px 0px;
-	font-size: 12px;
-}
-
-.row {
-	padding: 15px 0px 10px 0px;
-	font-size: 85%;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    color: #bbb;
-    font-size: 10px;
-    font-family: "Lucida Grande", Verdana, Helvetica, Arial, sans-serif;
-    font-weight: 100;	
-	border-bottom: 1px solid #ccc;
-}
-
-.sender {
-	text-transform: none;
 	font-size: 16px;
 }
 
-.subject {
-	color: #000;
-	font-family: Tahoma, Verdana, Segoe, sans-serif;
-	font-size: 20px;
-	font-weight: 200;
-	text-transform: none;
-	padding: 10px 0px;
+.geemailContent {
+	border-bottom: 1px solid #ccc;
 }
 
+.row {
+	padding: 20px 0px 15px 0px;
+}
+
+.date {
+	font-size: 85%;
+    letter-spacing: 1px;
+    font-size: 10px;
+    font-family: "Lucida Grande", Verdana, Helvetica, Arial, sans-serif;
+    font-weight: 100;	
+	text-transform: uppercase;
+    color: #bbb;
+    padding: 5px 0px 10px 0px;
+}
+
+.subject {
+	font-size: 20px;
+	font-family: 'Open Sans', 'Helvetica Neue', 'Arial', sans-serif;
+	font-weight: 900;
+}
 
 .messageRow {
-	padding: 0px 0px 30px 0px;
+	padding: 0px 0px 20px 0px;
 	display: none;
 }
